@@ -1,4 +1,4 @@
-import TopBar from "../../components/TopBar"
+import TopBar from "../../components/admin/TopBar"
 import DataTable from "react-data-table-component";
 import { RiFilter3Fill } from "react-icons/ri"
 import { Popover, Modal, Slider, Checkbox, Radio } from "@mantine/core";

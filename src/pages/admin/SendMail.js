@@ -1,5 +1,5 @@
 import { Button, Textarea, TextInput } from "@mantine/core"
-import TopBar from "../../components/TopBar"
+import TopBar from "../../components/admin/TopBar"
 
 const SendMail = () => {
   return (

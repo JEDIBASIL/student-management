@@ -1,5 +1,5 @@
 import { Button, Image, Radio, Select, TextInput } from "@mantine/core"
-import TopBar from "../../components/TopBar"
+import TopBar from "../../components/admin/TopBar"
 import {GiClick} from "react-icons/gi"
 
 const AddStudents = () => {

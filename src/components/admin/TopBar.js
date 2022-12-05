@@ -1,4 +1,4 @@
-import staticImg from "../static/images/user.png"
+import staticImg from "../../static/images/user.png"
 const TopBar = ({pageName}) => {
   return (
     <div className="top_nav">

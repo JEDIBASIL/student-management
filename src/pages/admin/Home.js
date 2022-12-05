@@ -1,8 +1,9 @@
-import OverviewCard from "../../components/OverviewCard"
-import TopBar from "../../components/TopBar"
+import OverviewCard from "../../components/admin/OverviewCard"
+import TopBar from "../../components/admin/TopBar"
 import { RiGroupLine, RiBarChartHorizontalFill } from "react-icons/ri"
-import LevelChart from "../../components/LevelChart"
+import LevelChart from "../../components/admin/LevelChart"
 import DataTable from "react-data-table-component"
+import GenderPieChart from "../../components/admin/GenderPieChart"
 
 const Home = () => {
 
@@ -35,6 +36,7 @@ const Home = () => {
 
             <div className="student_overview_container">
                 <div className="main recent_student_table">
+                <h3>Today's users</h3>
                     <DataTable
                         columns={tableColumns}
                         data={[{}, {}]}
@@ -52,7 +54,7 @@ const Home = () => {
                     <LevelChart />
                 </div>
                 <div className="level_chart">
-                    <LevelChart />
+                    <GenderPieChart />
                 </div>
             </div>
 
