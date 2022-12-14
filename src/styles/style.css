@@ -25,7 +25,7 @@ body{
 }
 
 .user_bar{
-   background-color: white;
+   background-color: rgb(55, 66, 77);
    width: 250px;
    min-width: 220px;
    max-width: 220px;
@@ -37,6 +37,7 @@ body{
    flex-direction: column;
    padding-top: 20px;
    transition: 0.2s ease-in-out;
+   z-index: 2;
 }
 
 .user_bar .nav_logo{
@@ -66,15 +67,15 @@ body{
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: white;
+    background-color: rgb(55, 66, 77);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.206);
-    color: gray;
+    color: whitesmoke;
     cursor: pointer;
-    border: 1px solid gainsboro;
 }
 
 .user_bar li{
     padding: 0px 20px;
+    color: whitesmoke;
 }
 
 .user_bar menu{
@@ -110,12 +111,12 @@ body{
 }
 
 .user_bar li .active:not(.inactive){
-    background-color: rgb(36,146,239) !important;
+    background-color: rgba(255, 255, 255, 0.274) !important;
     color: white;
 }
 
 .user_bar li a:hover{
-    background-color: whitesmoke;
+    background-color: rgba(255, 255, 255, 0.124);
 }
 
 .resize_bar{
@@ -138,17 +139,24 @@ body{
 
 .app_content{
     width: 100%;
-    padding: 0px 30px;
+}
+
+.app_container{
+        padding: 0px 30px;
 }
 
 .top_nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
+    height: 50px;
     width: 100%;
     margin-bottom: 20px;
     border-bottom: 1px solid gainsboro;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    padding: 0px 30px;
 }
 
 .top_nav .admin_profile_details{

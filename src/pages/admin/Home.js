@@ -28,36 +28,37 @@ const Home = () => {
     return (
         <div>
             <TopBar pageName={"Home"} />
-            <div className="overview_container">
-                <OverviewCard title={"Total students"} amount={"2.12K"} icon={<RiGroupLine />} color={"orange"} />
-                <OverviewCard title={"Today's students"} amount={"+120"} icon={<RiBarChartHorizontalFill />} color={"slateblue"} />
-                <OverviewCard title={"Total students"} amount={"2.12K"} icon={<RiGroupLine />} color={"slategray"} />
+            <div className="app_container">
+                <div className="overview_container">
+                    <OverviewCard title={"Total students"} amount={"2.12K"} icon={<RiGroupLine />} color={"orange"} />
+                    <OverviewCard title={"Today's students"} amount={"+120"} icon={<RiBarChartHorizontalFill />} color={"slateblue"} />
+                    <OverviewCard title={"Total students"} amount={"2.12K"} icon={<RiGroupLine />} color={"slategray"} />
+                </div>
+
+                <div className="student_overview_container">
+                    <div className="main recent_student_table">
+                        <h3>Today's users</h3>
+                        <DataTable
+                            columns={tableColumns}
+                            data={[{}, {}]}
+                            pagination
+                            noHeader
+                            defaultSortField="id"
+                            defaultSortAsc={false}
+                            highlightOnHover
+                            selectableRows
+                            fixedHeader
+                        />
+                    </div>
+
+                    <div className="level_chart">
+                        <LevelChart />
+                    </div>
+                    <div className="level_chart">
+                        <GenderPieChart />
+                    </div>
+                </div>
             </div>
-
-            <div className="student_overview_container">
-                <div className="main recent_student_table">
-                <h3>Today's users</h3>
-                    <DataTable
-                        columns={tableColumns}
-                        data={[{}, {}]}
-                        pagination
-                        noHeader
-                        defaultSortField="id"
-                        defaultSortAsc={false}
-                        highlightOnHover
-                        selectableRows
-                        fixedHeader
-                    />
-                </div>
-
-                <div className="level_chart">
-                    <LevelChart />
-                </div>
-                <div className="level_chart">
-                    <GenderPieChart />
-                </div>
-            </div>
-
         </div>
     )
 }

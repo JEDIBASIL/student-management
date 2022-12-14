@@ -36,66 +36,68 @@ const Students = () => {
         <div>
 
             <TopBar pageName={"Students"} />
-            <div className="students_container">
+            <div className="app_container">
+                <div className="students_container">
 
-                <Popover withArrow shadow="md" width={400}>
-                    <Popover.Target>
-                        <button className="filter_sign"><RiFilter3Fill />Filter</button>
-                    </Popover.Target>
-                    <Popover.Dropdown>
-                        <div className="filter_container">
-                            <h4>Level</h4>
-                            <Slider
-                                onChange={(e) => console.log(e)}
-                                label={(val) => MARKS.find((mark) => mark.value === val).label}
-                                defaultValue={100}
-                                step={100}
-                                marks={MARKS}
-                                max={500}
-                                min={100}
-                                styles={{ markLabel: { display: 'none' } }}
-                            />
-                        </div>
+                    <Popover withArrow shadow="md" width={400}>
+                        <Popover.Target>
+                            <button className="filter_sign"><RiFilter3Fill />Filter</button>
+                        </Popover.Target>
+                        <Popover.Dropdown>
+                            <div className="filter_container">
+                                <h4>Level</h4>
+                                <Slider
+                                    onChange={(e) => console.log(e)}
+                                    label={(val) => MARKS.find((mark) => mark.value === val).label}
+                                    defaultValue={100}
+                                    step={100}
+                                    marks={MARKS}
+                                    max={500}
+                                    min={100}
+                                    styles={{ markLabel: { display: 'none' } }}
+                                />
+                            </div>
 
-                        <div className="filter_container">
-                            <Checkbox.Group
-                                label={<h3>Department</h3>}
-                            >
-                                <div className="filter_checkbox_container">
-                                    <Checkbox value="computer science" label="Computer science" />
-                                    <Checkbox value="software engineering" label="Software engineering" />
-                                </div>
-                            </Checkbox.Group>
-                        </div>
+                            <div className="filter_container">
+                                <Checkbox.Group
+                                    label={<h3>Department</h3>}
+                                >
+                                    <div className="filter_checkbox_container">
+                                        <Checkbox value="computer science" label="Computer science" />
+                                        <Checkbox value="software engineering" label="Software engineering" />
+                                    </div>
+                                </Checkbox.Group>
+                            </div>
 
-                        <div className="filter_container">
-                            <Radio.Group
-                                label={<h3>Gender</h3>}
-                                name={"gender"}
-                            >
-                                <div className="filter_checkbox_container">
-                                    <Radio value="male" label="Male" />
-                                    <Radio value="female" label="Female" />
-                                </div>
-                            </Radio.Group>
-                        </div>
+                            <div className="filter_container">
+                                <Radio.Group
+                                    label={<h3>Gender</h3>}
+                                    name={"gender"}
+                                >
+                                    <div className="filter_checkbox_container">
+                                        <Radio value="male" label="Male" />
+                                        <Radio value="female" label="Female" />
+                                    </div>
+                                </Radio.Group>
+                            </div>
 
-                    </Popover.Dropdown>
+                        </Popover.Dropdown>
 
-                </Popover>
+                    </Popover>
 
-                <div className="main">
-                    <DataTable
-                        columns={tableColumns}
-                        data={[{}, {}]}
-                        pagination
-                        noHeader
-                        defaultSortField="id"
-                        defaultSortAsc={false}
-                        highlightOnHover
-                        selectableRows
-                        fixedHeader
-                    />
+                    <div className="main">
+                        <DataTable
+                            columns={tableColumns}
+                            data={[{}, {}]}
+                            pagination
+                            noHeader
+                            defaultSortField="id"
+                            defaultSortAsc={false}
+                            highlightOnHover
+                            selectableRows
+                            fixedHeader
+                        />
+                    </div>
                 </div>
             </div>
         </div>
