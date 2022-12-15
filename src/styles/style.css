@@ -199,7 +199,7 @@ body {
 
 .overview_container .overview_card {
   background-color: white;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 20px;
 }
 
@@ -234,7 +234,7 @@ body {
 .add_student_form .input_fields {
   padding: 20px;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-bottom: 20px;
   position: relative;
 }
@@ -368,7 +368,7 @@ body {
 
 .student_overview_container .recent_student_table {
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: white;
   grid-column: 1 / span 2;
   grid-row: 1 / span 2;
@@ -378,6 +378,6 @@ body {
 .student_overview_container .level_chart {
   padding: 15px;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 5px;
   height: fit-content;
 }

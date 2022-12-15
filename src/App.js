@@ -1,4 +1,3 @@
-import "./styles/style.css"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import Home from "./pages/admin/Home";
 import AddStudents from "./pages/admin/AddStudents";
@@ -6,6 +5,9 @@ import Students from "./pages/admin/Students";
 import SendMail from "./pages/admin/SendMail";
 import AdminApp from "./components/admin/AdminApp";
 import TeacherApp from "./components/teachers/TeacherApp";
+import TeacherHome from "./pages/teachers/TeacherHome";
+import "./styles/style.css"
+import "./styles/teacher.css"
 
 function App() {
   return (
@@ -20,7 +22,7 @@ function App() {
           </Route>
 
           <Route path="/teacher" element={<TeacherApp />}>
-        
+          <Route path="/teacher" index element={<TeacherHome />}></Route>
           </Route>
         </Routes>
       </div>
