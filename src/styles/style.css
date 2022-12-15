@@ -120,8 +120,8 @@ body {
 .user_bar li .active:not(.inactive):before{
     content: "";
     position: absolute;
-    left: -4px;
-    width: 8px;
+    left: -7.5px;
+    width: 15px;
     height: 70%;
     background-color: white;
     border-radius: 50px;
@@ -132,7 +132,7 @@ body {
 }
 
 .resize_bar {
-  width: 70px;
+  width: 150px;
   min-width: 70px;
   max-width: 70px;
 }

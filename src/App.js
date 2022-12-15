@@ -5,6 +5,7 @@ import AddStudents from "./pages/admin/AddStudents";
 import Students from "./pages/admin/Students";
 import SendMail from "./pages/admin/SendMail";
 import AdminApp from "./components/admin/AdminApp";
+import TeacherApp from "./components/teachers/TeacherApp";
 
 function App() {
   return (
@@ -16,6 +17,10 @@ function App() {
             <Route path="/admin/add-student" element={<AddStudents />}></Route>
             <Route path="/admin/students" element={<Students />}></Route>
             <Route path="/admin/send-mail" element={<SendMail />}></Route>
+          </Route>
+
+          <Route path="/teacher" element={<TeacherApp />}>
+        
           </Route>
         </Routes>
       </div>

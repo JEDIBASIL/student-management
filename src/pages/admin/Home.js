@@ -30,9 +30,9 @@ const Home = () => {
             <TopBar pageName={"Home"} />
             <div className="app_container">
                 <div className="overview_container">
-                    <OverviewCard title={"Total students"} amount={"2.12K"} icon={<RiGroupLine />} color={"orange"} />
+                    <OverviewCard title={"Total students"} amount={"2.12K"} icon={<RiGroupLine />} color={"slateblue"} />
                     <OverviewCard title={"Today's students"} amount={"+120"} icon={<RiBarChartHorizontalFill />} color={"slateblue"} />
-                    <OverviewCard title={"Total students"} amount={"2.12K"} icon={<RiGroupLine />} color={"slategray"} />
+                    <OverviewCard title={"Total students"} amount={"2.12K"} icon={<RiGroupLine />} color={"slateblue"} />
                 </div>
 
                 <div className="student_overview_container">
