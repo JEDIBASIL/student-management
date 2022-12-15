@@ -65,7 +65,7 @@ const AddStudents = () => {
             firstName,
             lastName,
             department,
-            level,
+            level:parseInt(level),
             gender,
             addresses,
         };
