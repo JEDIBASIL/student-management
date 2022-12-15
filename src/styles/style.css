@@ -19,7 +19,7 @@ body{
 }
 
 .adminApp{
-    background-color: rgb(245, 247, 249);
+    background-color: rgb(234, 234, 234);
     display: flex;
     width: 100%;
 }
@@ -27,8 +27,8 @@ body{
 .user_bar{
    background-color: rgb(55, 66, 77);
    width: 250px;
-   min-width: 220px;
-   max-width: 220px;
+   min-width: 250px;
+   max-width: 250px;
    height: 100vh;
    position: sticky;
    top: 0;
@@ -37,7 +37,7 @@ body{
    flex-direction: column;
    padding-top: 20px;
    transition: 0.2s ease-in-out;
-   z-index: 2;
+   z-index: 5;
 }
 
 .user_bar .nav_logo{
@@ -95,7 +95,7 @@ body{
     width: 100%;
     font-size: 16px;
     font-weight: 600;
-    padding: 10px;
+    padding: 12px;
     border-radius: 10px;
     margin-top: 10px;
     transition: 0.2s ease-in-out;
@@ -157,6 +157,7 @@ body{
     position: sticky;
     top: 0;
     padding: 0px 30px;
+    z-index: 2;
 }
 
 .top_nav .admin_profile_details{
@@ -205,6 +206,8 @@ body{
     font-size: 30px;
 }
 
+
+
 .overview_container .overview_card p{
     font-size: 20px;
     color: gray;
@@ -222,7 +225,38 @@ body{
     background-color: white;
     border-radius: 10px;
     margin-bottom: 20px;
-    
+    position: relative;
+}
+
+.add_student_form .input_field_container{
+    position: relative;
+}
+
+.add_student_form .input_field_container .add_more_address{
+    position: absolute;
+    bottom: 20px;
+    right: -20px;
+}
+
+.add_student_form .input_field_container  .delete_address_icon{
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    background-color: white;
+    border: 1px solid gainsboro;
+    cursor: pointer;
+}
+
+.add_student_form .input_field_container  .delete_address_icon svg{
+    font-size: 22px;
+    color: crimson;
 }
 
 .grid_2{
